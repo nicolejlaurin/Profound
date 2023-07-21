@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/nicolejlaurin/Profound/issues"
   },
-  "homepage": "https://nicolejlaurin.github.io/Profound",
+  "homepage": ".",
   "browserslist": {
     "production": [
       ">0.2%",
