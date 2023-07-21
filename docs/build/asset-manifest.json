@@ -21,7 +21,7 @@
   "static/media/CN-32.jpg": "/static/media/CN-32.f73f03c2.jpg",
   "static/css/1.bb8e6fa5.chunk.css.map": "/static/css/1.bb8e6fa5.chunk.css.map",
   "static/css/main.33ce0004.chunk.css.map": "/static/css/main.33ce0004.chunk.css.map",
-  "index.html": "/Public/index.html",
+  "index.html": "/public/index.html",
   "precache-manifest.e8bd90b89389bddaefc07b95a1907beb.js": "/precache-manifest.e8bd90b89389bddaefc07b95a1907beb.js",
   "service-worker.js": "/service-worker.js"
 }
