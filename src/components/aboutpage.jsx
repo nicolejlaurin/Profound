@@ -1,5 +1,10 @@
 import React from 'react';
-import Img_logo from '../images/CN-9.jpg';
+import Img from '../images/CN-9.jpg';
+
+import { FaQuoteLeft} from 'react-icons/fa'
+import { Link }  from 'react-router-dom';
+import { BsArrowRight } from "react-icons/bs";
+
 
 export default () => (
 
@@ -30,14 +35,24 @@ export default () => (
 				</div>
 			</div>
 		</div>
-		<div className="aboutpage-split">
-			<img src={Img_logo} id="about-img"></img>
-			<div className="aboutpage-text">
-				<h4 class="name"> Clinton Noel</h4>
+
+		<div className='animated reveal fade-bottom aboutpage-split'>
+		<h4>Meet the Team</h4>
+
+   		<div class="test-container">
+      		<div class=" color-div test-div animated reveal fade-bottom">
+				<div class="pic">
+					<img class="testimony-pic" src={Img} alt=""></img>
+				</div>
+				<h2> Clinton Noel</h2>
+				<h3>SPORTS MARKETING AGENT</h3>
 				<p>
 				Clinton Noel is a 2019 graduate of Huston Tillotson University undergrad (HBCU) and 2021 graduate of St. Thomas University with a MBA in Sports Administration, specialization in Marketing certification. Noel finished his collegiate basketball career at his alma mater Huston Tillotson. Shortly after graduation, Noel followed his desires and passion to help athletes optimize their careers. Noel's core values are integrity, dedication, transparency, and innovation.
 				</p>
-			</div>
-		</div>
+			  </div>
+	
+    </div>
+  </div>
+		
 	</div>
 );
