@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/Profound/static/media/CN-32.f73f03c2.jpg"
   },
   {
-    "revision": "d166354f135d5f010349a6454fee0f74",
+    "revision": "c9f3cb4acf1c3895de2d0742eecad830",
     "url": "/Profound/index.html"
   }
 ];
