@@ -5,6 +5,25 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './Button';
 import { useLocation } from "react-router";
 
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+    if (currentScrollPos === (0, 0)){
+      document.getElementById("navbar").style.top = "0";
+
+    
+    }
+  }
+     
+
 const ScrollToTop = (props) => {
   const location = useLocation();
   useEffect(() => {
@@ -32,41 +51,39 @@ function Navigation() {
 
   window.addEventListener('resize', showButton);
   return (
-<body>
-  <nav className='navbar'>
-    <div className='navbar-container'>
-    <div class="navbar-left">
-     <a href="/" aria-current="page" class="w-inline-block w--current">
-     <img class="logo" src={Img_logo} href='/' alt="Image"></img>
-     </a>
-     </div>
-  <div className='menu-icon' onClick={handleClick}>
-    <i className={click ? 'fa fa-times':'fa fa-bars'}></i>
-  </div>
+<nav className='navbar' id="navbar">
+<div class="navbar-left">
+         <a href="/" aria-current="page" class="w-inline-block w--current">
+         <img class="logo" src={Img_logo} href='/' alt="Image"></img>
+         </a>
+      </div>
+      <div className='menu-icon' onClick={handleClick}>
+        <i className={click ? 'fa fa-times':'fa fa-bars'}></i>
+      </div>
+      <div class="navbar-right">
 
-  <ScrollToTop>
-  <ul className={click ? 'nav-menu active':'nav-menu'}>
-  <li>
-    <NavLink to="/" className='nav-links' onClick={closeMobileMenu}>Home</NavLink>
-  </li>
-  <li>
-    <NavLink to="/aboutpage" className='nav-links' onClick={closeMobileMenu}>About Us</NavLink>
-  </li>
-  <li>
-    <NavLink  to="/service" className='nav-links' onClick={closeMobileMenu}>Services</NavLink>
-  </li>
+      <ScrollToTop>
+        <ul className={click ? 'nav-menu active':'nav-menu'}>
+        <li>
+          <NavLink to="/" className='nav-links' onClick={closeMobileMenu}>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/aboutpage" className='nav-links' onClick={closeMobileMenu}>About Us</NavLink>
+        </li>
+        <li>
+          <NavLink  to="/service" className='nav-links' onClick={closeMobileMenu}>Services</NavLink>
+        </li>
 
-  <li>
-    <NavLink to="/contactpage" className='nav-links' onClick={closeMobileMenu}>Contact</NavLink>
-  </li>
+        <li>
+          <NavLink to="/contactpage" className='nav-links' onClick={closeMobileMenu}>Contact</NavLink>
+        </li>
 
-  </ul>
-</ScrollToTop>
-
-</div>
+        </ul>
+      </ScrollToTop>
+      </div>
 </nav>
 
-</body>
+
 
 
   );
