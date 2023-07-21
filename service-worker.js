@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Profound/precache-manifest.ac8472c6dd8dd46b6d8398a7cab620ef.js"
+  "/Profound/precache-manifest.932de8a4317c29508de3cdb9e4d482bb.js"
 );
 
 workbox.clientsClaim();
