@@ -69,6 +69,6 @@ self.__precacheManifest = [
   },
   {
     "revision": "e72154651ab7eb6214c8a3bba8737d85",
-    "url": "/index.html"
+    "url": "/Public/index.html"
   }
 ];

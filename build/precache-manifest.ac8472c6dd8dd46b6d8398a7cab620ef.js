@@ -69,6 +69,6 @@ self.__precacheManifest = [
   },
   {
     "revision": "2a6f025aceb4caca1923ac65ac369ee9",
-    "url": "/Profound/index.html"
+    "url": "/Profound/Public/index.html"
   }
 ];
