@@ -6,23 +6,23 @@
   "main": "./src/index.js",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build docs || move build docs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolejlaurin/CN.git"
+    "url": "git+https://github.com/nicolejlaurin/Profound.git"
   },
   "author": "Nicole Laurin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nicolejlaurin/CN/issues"
+    "url": "https://github.com/nicolejlaurin/Profound/issues"
   },
-  "homepage": "https://nicolejlaurin.github.io/CN",
+  "homepage": "https://nicolejlaurin.github.io/Profound",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -38,7 +38,6 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "babel-preset-react": "^6.24.1",
-    "gh-pages": "^4.0.0",
     "grommet-icons": "^4.7.0",
     "grommet-styles": "^0.2.0",
     "react": "^18.2.0",
@@ -51,5 +50,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
