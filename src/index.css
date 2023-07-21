@@ -248,10 +248,10 @@ body p{
     min-height: 70vh;
     background-size: 100rem;
     width: auto;
-    height: 43rem;
+    height: 50rem;
   }
 	.landing h2{
-		font-size: 100px;
+		font-size: 120px;
     padding: 10rem 0rem 10rem 3rem;
 	}
   .landing p{
@@ -271,8 +271,8 @@ body p{
 
 @media only screen and (max-width: 500px) {
   .landing {
-    max-height: 70vh;
-    min-height: 55vh;
+    max-height: 80vh;
+    min-height: 70vh;
     width: auto;
 
   }
