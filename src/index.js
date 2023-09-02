@@ -20,7 +20,8 @@ import Section2 from './components/service-section2';
 import Section3 from './components/service-section3';
 import MainSection5 from './components/main-section5';
 import Thankyou from './components/thankyou';
-
+import Events from "./components/Events";
+import EventPage from "./components/EventPage";
 
 export default function App() {
   return (
@@ -64,6 +65,8 @@ ReactDOM.render(
   		</>} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/client" element={<Client />} />
+      <Route path="/Events" element={<Events />} />
+      <Route path="/EventPage" element={<EventPage />} />
       <Route path="/sports" element={<Sports />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/contactpage" element={<ContactPage />} />

@@ -145,7 +145,7 @@ body p{
   }
 
   .nav-links:hover {
-    color: #B8DDFF;
+    color: #afdeb7;
     transform: scaleY(1.1);
     transition: 0.3s;
   }
@@ -273,8 +273,8 @@ body p{
 
 @media only screen and (max-width: 500px) {
   .landing {
-    max-height: 80vh;
-    min-height: 70vh;
+    max-height: 85vh;
+    min-height: 75vh;
     width: auto;
 
   }
@@ -2079,8 +2079,20 @@ fieldset {
 	padding: 0rem 3rem 0rem 3rem;
 }
 
+/*----------------------------FAQ PAGE CSS------------------------------*/
 
+#eventbrite-tickets{
+  height:30rem;
+  width:100%;
+  overflow:auto;
+}
 
+#eventbrite-tickets-12262923735{
+  height:60rem;
+  width:100%;
+  overflow:auto;
+  padding-top:7rem;
+}
 /*----------------------------FAQ PAGE CSS------------------------------*/
 
 

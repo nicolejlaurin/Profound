@@ -73,7 +73,9 @@ function Navigation() {
         <li>
           <NavLink  to="/service" className='nav-links' onClick={closeMobileMenu}>Services</NavLink>
         </li>
-
+        <li>
+          <NavLink  to="/EventPage" className='nav-links' onClick={closeMobileMenu}>Events</NavLink>
+        </li>
         <li>
           <NavLink to="/contactpage" className='nav-links' onClick={closeMobileMenu}>Contact</NavLink>
         </li>
